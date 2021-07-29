@@ -17,7 +17,7 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return { greeting: 'Bem vindo a api.' }
+  return { greeting: 'Bem vindo a de teste.' }
 })
 
 Route.post('/user/register', 'UserController.register');
