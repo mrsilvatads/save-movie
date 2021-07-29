@@ -83,8 +83,7 @@ module.exports = {
   // }
   pg: {
     client: 'pg',
-    // connection:'postgres://postgres:972189@127.0.0.1:5432/savemovie',
-    connection: 'postgres://nvbenhobfxlslf:7eaa88cc1b9dfe90384e9cbc354dabe06ddca6e4d3af1c4722ecb1bc4ee0a058@ec2-34-194-130-103.compute-1.amazonaws.com:5432/d2oh95jabri1dv',
+    connection: Env.get('DATABASE_URL', ''),  
     debug: Env.get('DB_DEBUG', false)
   }
 }
