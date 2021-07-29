@@ -46,7 +46,7 @@ module.exports = {
   pg: {
     client: 'pg',
     connection: Env.get('DATABASE_URL', ''),
-    // 'postgres://qjoulbrztsremz:47d96661586186d7aac17f4c6537dda11155588803c70e57fbf9916c00e0f621@ec2-52-86-2-228.compute-1.amazonaws.com:5432/d5l84cbeq9qc3p?ssl=true',
+    // 'postgres://qjoulbrztsremz:47d96661586186d7aac17f4c6537dda11155588803c70e57fbf9916c00e0f621@ec2-52-86-2-228.compute-1.amazonaws.com:5432/d5l84cbeq9qc3p',
     // Env.get('DATABASE_URL', '') 
     debug: Env.get('DB_DEBUG', false)
   }
