@@ -70,15 +70,21 @@ module.exports = {
   | npm i --save pg
   |
   */
+  // pg: {
+  //   client: 'pg',
+  //   connection: {
+  //     host: Env.get('DB_HOST', 'localhost'),
+  //     port: Env.get('DB_PORT', ''),
+  //     user: Env.get('DB_USER', 'root'),
+  //     password: Env.get('DB_PASSWORD', ''),
+  //     database: Env.get('DB_DATABASE', 'adonis')
+  //   },
+  //   debug: Env.get('DB_DEBUG', false)
+  // }
   pg: {
     client: 'pg',
-    connection: {
-      host: Env.get('DB_HOST', 'localhost'),
-      port: Env.get('DB_PORT', ''),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'adonis')
-    },
+    // connection:'postgres://postgres:972189@127.0.0.1:5432/savemovie',
+    connection: 'postgres://nvbenhobfxlslf:7eaa88cc1b9dfe90384e9cbc354dabe06ddca6e4d3af1c4722ecb1bc4ee0a058@ec2-34-194-130-103.compute-1.amazonaws.com:5432/d2oh95jabri1dv',
     debug: Env.get('DB_DEBUG', false)
   }
 }
