@@ -31,20 +31,24 @@ module.exports = {
   //   },
   //   debug: Env.get('DB_DEBUG', false)
   // },
-
-  pg: {
-    client: 'pg',
-    connection: {
-      host: Env.get('DB_HOST', 'localhost'),
-      port: Env.get('DB_PORT', ''),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'adonis'),
-      ssl: false,      
-      // ssl: { rejectUnauthorized },
-    },
-    debug: Env.get('DB_DEBUG', false)
-  }
+  mysql: {
+    client: 'mysql',
+    connection:'mysql://n0tbamnp0hvqpcna:xsengyku9cinlnlj@pfw0ltdr46khxib3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wkgba65qnngtdus7' 
+    ,debug: Env.get('DB_DEBUG', false)
+  },
+  // pg: {
+  //   client: 'pg',
+  //   connection: {
+  //     host: Env.get('DB_HOST', 'localhost'),
+  //     port: Env.get('DB_PORT', ''),
+  //     user: Env.get('DB_USER', 'root'),
+  //     password: Env.get('DB_PASSWORD', ''),
+  //     database: Env.get('DB_DATABASE', 'adonis'),
+  //     ssl: false,      
+  //     // ssl: { rejectUnauthorized },
+  //   },
+  //   debug: Env.get('DB_DEBUG', false)
+  // }
   // pg: {
   //   client: 'pg',
   //   connection: 'postgres://ciwmvvyqkpeuhr:dbedfef12152f385d863dd9f04bb631827adcbd5879bec869f5628886a765032@ec2-52-0-67-144.compute-1.amazonaws.com:5432/d7plsckal01i2e?sslmode=require',
